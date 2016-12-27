@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  Technician
+//
+//  Created by 马良赞 on 16/12/21.
+//  Copyright © 2016年 马良赞. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+#import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import "HYMacros.h"
+#import "HYHttpRequest.h"
+#import "SDAutoLayout.h"
+#import "Masonry.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
+#import "OCProject.h"
+#endif
+
+
+#endif /* PrefixHeader_pch */
