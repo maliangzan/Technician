@@ -16,6 +16,11 @@
 		D61156971E1240CA006C529B /* Orders_tab_Item_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D611568F1E1240CA006C529B /* Orders_tab_Item_default@2x.png */; };
 		D61156981E1240CA006C529B /* Orders_tab_Item_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D61156901E1240CA006C529B /* Orders_tab_Item_select@2x.png */; };
 		D611569B1E124582006C529B /* OCProject.m in Sources */ = {isa = PBXBuildFile; fileRef = D611569A1E124582006C529B /* OCProject.m */; };
+		D648FD631E16350C00E6EBF9 /* pic_home_Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = D648FD621E16350C00E6EBF9 /* pic_home_Portrait.png */; };
+		D648FD651E1639F500E6EBF9 /* home_Start_Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = D648FD641E1639F500E6EBF9 /* home_Start_Btn.png */; };
+		D648FD681E16415300E6EBF9 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D648FD671E16415300E6EBF9 /* BaseNavigationController.m */; };
+		D648FD6A1E1645F500E6EBF9 /* back_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = D648FD691E1645F500E6EBF9 /* back_btn.png */; };
+		D648FD701E1652CF00E6EBF9 /* serviceDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D648FD6F1E1652CF00E6EBF9 /* serviceDetailsVC.m */; };
 		D66BFE1E1E14E15700D198B1 /* OCHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66BFE1D1E14E15700D198B1 /* OCHomeHeaderView.m */; };
 		D66BFE251E14F76E00D198B1 /* home_in_orders_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = D66BFE221E14F76D00D198B1 /* home_in_orders_btn.png */; };
 		D66BFE261E14F76E00D198B1 /* home_in_rest_btn.png.png in Resources */ = {isa = PBXBuildFile; fileRef = D66BFE231E14F76D00D198B1 /* home_in_rest_btn.png.png */; };
@@ -74,6 +79,13 @@
 		D61156901E1240CA006C529B /* Orders_tab_Item_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orders_tab_Item_select@2x.png"; sourceTree = "<group>"; };
 		D61156991E124582006C529B /* OCProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCProject.h; sourceTree = "<group>"; };
 		D611569A1E124582006C529B /* OCProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCProject.m; sourceTree = "<group>"; };
+		D648FD621E16350C00E6EBF9 /* pic_home_Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic_home_Portrait.png; sourceTree = "<group>"; };
+		D648FD641E1639F500E6EBF9 /* home_Start_Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_Start_Btn.png; sourceTree = "<group>"; };
+		D648FD661E16415300E6EBF9 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		D648FD671E16415300E6EBF9 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		D648FD691E1645F500E6EBF9 /* back_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_btn.png; sourceTree = "<group>"; };
+		D648FD6E1E1652CF00E6EBF9 /* serviceDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serviceDetailsVC.h; sourceTree = "<group>"; };
+		D648FD6F1E1652CF00E6EBF9 /* serviceDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = serviceDetailsVC.m; sourceTree = "<group>"; };
 		D66BFE1C1E14E15700D198B1 /* OCHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCHomeHeaderView.h; sourceTree = "<group>"; };
 		D66BFE1D1E14E15700D198B1 /* OCHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCHomeHeaderView.m; sourceTree = "<group>"; };
 		D66BFE221E14F76D00D198B1 /* home_in_orders_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_in_orders_btn.png; sourceTree = "<group>"; };
@@ -301,6 +313,8 @@
 				D6F8C4661E0B7DF800FA598E /* BaseLoginVC.m */,
 				D6F8C4751E0BC8BC00FA598E /* BaseForgetRegisterVC.h */,
 				D6F8C4761E0BC8BC00FA598E /* BaseForgetRegisterVC.m */,
+				D648FD661E16415300E6EBF9 /* BaseNavigationController.h */,
+				D648FD671E16415300E6EBF9 /* BaseNavigationController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -410,6 +424,9 @@
 		D67AEBF01E0A6F25000745EA /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				D648FD691E1645F500E6EBF9 /* back_btn.png */,
+				D648FD641E1639F500E6EBF9 /* home_Start_Btn.png */,
+				D648FD621E16350C00E6EBF9 /* pic_home_Portrait.png */,
 				D66BFE281E14F7A200D198B1 /* home_notice_btn.png */,
 				D66BFE221E14F76D00D198B1 /* home_in_orders_btn.png */,
 				D66BFE231E14F76D00D198B1 /* home_in_rest_btn.png.png */,
@@ -468,6 +485,8 @@
 				D6987D601E10F1650025BB33 /* OrdersViewController.m */,
 				D66BFE2D1E150A0300D198B1 /* OrdersCell.h */,
 				D66BFE2E1E150A0300D198B1 /* OrdersCell.m */,
+				D648FD6E1E1652CF00E6EBF9 /* serviceDetailsVC.h */,
+				D648FD6F1E1652CF00E6EBF9 /* serviceDetailsVC.m */,
 			);
 			path = Orders;
 			sourceTree = "<group>";
@@ -544,6 +563,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D648FD631E16350C00E6EBF9 /* pic_home_Portrait.png in Resources */,
+				D648FD651E1639F500E6EBF9 /* home_Start_Btn.png in Resources */,
 				D67AEBF81E0A6F25000745EA /* login_Bt_Img.png in Resources */,
 				D67AEBF71E0A6F25000745EA /* back_Bt.png in Resources */,
 				D67AEBFC1E0A6F25000745EA /* verification_Code.png in Resources */,
@@ -561,6 +582,7 @@
 				D66BFE251E14F76E00D198B1 /* home_in_orders_btn.png in Resources */,
 				D67AEBFA1E0A6F25000745EA /* password_Img.png in Resources */,
 				D61156981E1240CA006C529B /* Orders_tab_Item_select@2x.png in Resources */,
+				D648FD6A1E1645F500E6EBF9 /* back_btn.png in Resources */,
 				D61156951E1240CA006C529B /* Me_tab_Item_default@2x.png in Resources */,
 				D67AEBFB1E0A6F25000745EA /* user_name_Img.png in Resources */,
 				D61156941E1240CA006C529B /* Home_tab_Item_select@2x.png in Resources */,
@@ -579,6 +601,7 @@
 				D6F8C4711E0BBA8900FA598E /* ForgetViewController.m in Sources */,
 				D6F8C4771E0BC8BC00FA598E /* BaseForgetRegisterVC.m in Sources */,
 				D67AEBB51E0A2D68000745EA /* BaseViewController.m in Sources */,
+				D648FD701E1652CF00E6EBF9 /* serviceDetailsVC.m in Sources */,
 				D67AEBAB1E0A2BE9000745EA /* UIImage+ColorImage.m in Sources */,
 				D67AEBB11E0A2C19000745EA /* ProgressHUD.m in Sources */,
 				D67AEBE61E0A6B73000745EA /* MASCompositeConstraint.m in Sources */,
@@ -603,6 +626,7 @@
 				D67AEBEC1E0A6B73000745EA /* NSArray+MASAdditions.m in Sources */,
 				D6987D671E10F1800025BB33 /* MeViewController.m in Sources */,
 				D6987D611E10F1650025BB33 /* OrdersViewController.m in Sources */,
+				D648FD681E16415300E6EBF9 /* BaseNavigationController.m in Sources */,
 				D611569B1E124582006C529B /* OCProject.m in Sources */,
 				D6987D5E1E10F1510025BB33 /* HomeViewController.m in Sources */,
 				D67AEBEA1E0A6B73000745EA /* MASViewAttribute.m in Sources */,

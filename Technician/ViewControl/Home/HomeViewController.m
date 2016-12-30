@@ -71,6 +71,7 @@
     // Dispose of any resources that can be recreated.
 }
 -(void)buildUI{
+    [super buildUI];
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -100,13 +101,13 @@
     return cell;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 2;
+    return 3;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 1;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 200.0;
+    return 180.0*kHeightFactor;
 }
 //- (CGFloat)tableView:( UITableView *)tableView heightForHeaderInSection:( NSInteger )section
 //{

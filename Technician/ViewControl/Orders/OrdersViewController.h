@@ -7,7 +7,7 @@
 //
 
 #import "BackGroundViewController.h"
-
-@interface OrdersViewController : BackGroundViewController
+#import "BaseNavigationController.h"
+@interface OrdersViewController : BaseNavigationController
 
 @end
