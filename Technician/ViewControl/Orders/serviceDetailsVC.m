@@ -14,6 +14,7 @@
 @interface serviceDetailsVC ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UITableView *tableView;
 @property(nonatomic, strong)NSArray *cellArray;
+@property(nonatomic, strong)NSArray *cellTitle;
 @property(nonatomic, strong)NSArray *cellheight;
 @end
 
@@ -37,9 +38,15 @@
 }
 -(NSArray *)cellArray{
     if (!_cellArray) {
-        _cellArray = [[NSArray alloc]initWithObjects:@"cell1",@"cell2", nil];
+        _cellArray = [[NSArray alloc]initWithObjects:@"cell1",@"cell2",@"cell3",@"cell2",@"cell4", nil];
     }
     return _cellArray;
+}
+-(NSArray *)cellTitle{
+    if (!_cellTitle) {
+        _cellTitle = [[NSArray alloc]initWithObjects:@"",@"服务时间：今天（周六）9:00",@"",@"订单金额（含感谢费15元)                     657",@"", nil];
+    }
+    return _cellTitle;
 }
 -(UITableView *)tableView{
     if (!_tableView) {
@@ -69,42 +76,47 @@
         make.bottom.equalTo(self.view);
         
     }];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell2"];
     [self.tableView registerNib:[UINib nibWithNibName:@"serviceImageCell" bundle:nil] forCellReuseIdentifier:@"cell1"];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell2"];
     [self.tableView registerNib:[UINib nibWithNibName:@"serviceAddressCell" bundle:nil] forCellReuseIdentifier:@"cell3"];
     [self.tableView registerNib:[UINib nibWithNibName:@"ordersBtnCell" bundle:nil] forCellReuseIdentifier:@"cell4"];
 }
 #pragma mark UITableViewDelegate, UITableViewDataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    if ([indexPath section] ==0) {
-        serviceImageCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell1"];
-        [cell setBackgroundColor:[UIColor clearColor]];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        return cell;
-    }else{
-        if ([indexPath section] == 4) {
-            ordersBtnCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell4"];
-            [cell setBackgroundColor:[UIColor whiteColor]];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            return cell;
-        }else{
-            if ([indexPath section] ==2) {
-                serviceAddressCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell3"];
-                [cell setBackgroundColor:[UIColor whiteColor]];
-                cell.selectionStyle = UITableViewCellSelectionStyleNone;
-                return cell;
-            }else{
-                UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell2"];
-                cell.textLabel.text = @"服务时间：今天（周六）9:00";
-                [cell setBackgroundColor:[UIColor whiteColor]];
-                cell.selectionStyle = UITableViewCellSelectionStyleNone;
-                return cell;
-            }
-
-        }
-        
-    }
+//    if ([indexPath section] ==0) {
+//        serviceImageCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell1"];
+//        [cell setBackgroundColor:[UIColor clearColor]];
+//        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//        return cell;
+//    }else{
+//        if ([indexPath section] == 4) {
+//            ordersBtnCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell4"];
+//            [cell setBackgroundColor:[UIColor clearColor]];
+//            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//            return cell;
+//        }else{
+//            if ([indexPath section] ==2) {
+//                serviceAddressCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell3"];
+//                [cell setBackgroundColor:[UIColor whiteColor]];
+//                cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//                return cell;
+//            }else{
+//                UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell2"];
+//                cell.textLabel.text = @"服务时间：今天（周六）9:00";
+//                [cell setBackgroundColor:[UIColor whiteColor]];
+//                cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//                return cell;
+//            }
+//
+//        }
+//        
+//    }
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:[self.cellArray objectAtIndex:[indexPath section]]];
+    cell.textLabel.text = [self.cellTitle objectAtIndex:[indexPath section]];
+    [cell setBackgroundColor:[UIColor whiteColor]];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 5;
