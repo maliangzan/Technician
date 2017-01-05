@@ -45,7 +45,8 @@
 -(UILabel *)titleLabel{
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc]init];
-        _titleLabel.text = @"服务接单";
+        _titleLabel.font = [UIFont systemFontOfSize:15*kWidthFactor];
+        [_titleLabel setTextColor:getColor(@"1cc6a2")];
         [_titleLabel setBackgroundColor:[UIColor clearColor]];
     }
     return _titleLabel;
@@ -69,7 +70,7 @@
     
     [self.view addSubview:self.backBtn];
     [self.backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.view).offset(20*kWidthFactor);
+        make.left.equalTo(self.view).offset(15*kWidthFactor);
         make.top.equalTo(self.view).offset(30*kHeightFactor);
         make.size.mas_equalTo(CGSizeMake(12*kWidthFactor, 18*kHeightFactor));
     }];

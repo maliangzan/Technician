@@ -38,6 +38,8 @@
 }
 -(void)buildUI{
     [super buildUI];
+    self.backBtn.hidden = YES;
+    self.titleLabel.text = @"服务接单";
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -81,6 +83,7 @@
     return 0.01;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     [self.tabBarController.navigationController pushViewController:[serviceDetailsVC new] animated:YES];
 }
 /*
