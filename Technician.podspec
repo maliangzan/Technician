@@ -15,27 +15,27 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "Technician"
-  spec.version      = "0.0.1"
-  spec.summary      = "test"
-  spec.license      = "MIT"
-  spec.author       = {"maliangzan"=>"maliangzan@126.com"}
-  spec.social_media_url = "https://github.com/maliangzan"
-  spec.platform     = :ios, "9.0"
-  spec.source_files = "Technician/**/*.{h.m}"
-  spec.requires_arc = true 
-  spec.dependency "AFNetworking","~>3.2.1"
-  spec.frameworks = "UIKit"
-
+  spec.name         = 'Technician'
+  spec.version      = '1.0.0'
+  spec.summary      = 'test'
+  spec.license      =  'MIT'
+  spec.authors      = {'maliangzan' => 'maliangzan@126.com'}
+  spec.social_media_url = 'https://github.com/maliangzan'
+  spec.platform     = :ios, '9.0'
+  spec.source_files = 'Expand/Tools//github.com/maliangzan'
+  spec.platform     = :ios, '9.0'
+  spec.source_files = 'Technician/Expand/Tools/*.{h,m}'
+  spec.requires_arc = true
+  spec.requires_arc = true
+  spec.homepage = 'https://github.com/maliangzan/Technician'
+  spec.source = {:git => 'https://github.com/maliangzan/Technician.git', :tag => spec.version}
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
 
-  spec.homepage     = "http://EXAMPLE/Technician"
+  # spec.homepage     = "http://EXAMPLE/Technician"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -45,21 +45,12 @@ Pod::Spec.new do |spec|
   #  CocoaPods will detect a license file if there is a named LICENSE*
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
-
-  spec.license      = "MIT (example)"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
-  #  Specify the authors of the library, with email addresses. Email addresses
-  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
-  #  accepts just a name if you'd rather not provide an email address.
-  #
-  #  Specify a social_media_url where others can refer to, for example a twitter
-  #  profile URL.
-  #
-
+  #  Specify the authors of the library, with email
   spec.author             = { "mako" => "maliangzan@126.com" }
   # Or just: spec.author    = "mako"
   # spec.authors            = { "mako" => "maliangzan@126.com" }
@@ -87,8 +78,6 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/Technician.git", :tag => "#{spec.version}" }
-
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -98,8 +87,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+
 
   # spec.public_header_files = "Classes/**/*.h"
 
