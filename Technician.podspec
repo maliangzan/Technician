@@ -20,15 +20,17 @@ Pod::Spec.new do |spec|
   spec.summary      = 'test'
   spec.license      =  'MIT'
   spec.authors      = {'maliangzan' => 'maliangzan@126.com'}
-  spec.social_media_url = 'https://github.com/maliangzan'
   spec.platform     = :ios, '9.0'
-  spec.source_files = 'Expand/Tools//github.com/maliangzan'
-  spec.platform     = :ios, '9.0'
-  spec.source_files = 'Technician/Expand/Tools/*.{h,m}'
-  spec.requires_arc = true
+  spec.ios.deployment_target = '9.0'
+  spec.source_files = 'Technician/Expand/Const/*.{h,m}'
   spec.requires_arc = true
   spec.homepage = 'https://github.com/maliangzan/Technician'
   spec.source = {:git => 'https://github.com/maliangzan/Technician.git', :tag => spec.version}
+  spec.description = <<-DESC
+                                A loger description of MyExtention
+                       DESC
+  spec.framework = 'UIKit'
+
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
