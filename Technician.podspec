@@ -18,6 +18,14 @@ Pod::Spec.new do |spec|
   spec.name         = "Technician"
   spec.version      = "0.0.1"
   spec.summary      = "test"
+  spec.license      = "MIT"
+  spec.author       = {"maliangzan"=>"maliangzan@126.com"}
+  spec.social_media_url = "https://github.com/maliangzan"
+  spec.platform     = :ios, "9.0"
+  spec.source_files = "Technician/**/*.{h.m}"
+  spec.requires_arc = true 
+  spec.dependency "AFNetworking","~>3.2.1"
+  spec.frameworks = "UIKit"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
