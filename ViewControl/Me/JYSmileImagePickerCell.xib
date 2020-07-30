@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JYSmileImagePickerCell">
+            <rect key="frame" x="0.0" y="0.0" width="214" height="193"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="214" height="193"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Mc-F5-p2u">
+                        <rect key="frame" x="8" y="12" width="198" height="181"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gA-Ah-3da">
+                        <rect key="frame" x="196" y="6" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="9Jz-ee-p8H"/>
+                            <constraint firstAttribute="height" constant="16" id="gYg-mr-Oes"/>
+                        </constraints>
+                        <state key="normal" image="close0001"/>
+                        <state key="highlighted" image="picture_del_highlight"/>
+                        <connections>
+                            <action selector="deleteImage:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Oy3-gL-aiQ"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7Mc-F5-p2u" secondAttribute="trailing" constant="8" id="3Yt-O0-zSi"/>
+                <constraint firstItem="7Mc-F5-p2u" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="K50-ht-wFO"/>
+                <constraint firstItem="0gA-Ah-3da" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="hVp-C3-8Dc"/>
+                <constraint firstAttribute="trailing" secondItem="0gA-Ah-3da" secondAttribute="trailing" constant="2" id="l9G-75-gj9"/>
+                <constraint firstAttribute="bottom" secondItem="7Mc-F5-p2u" secondAttribute="bottom" id="xhq-rl-rZZ"/>
+                <constraint firstItem="7Mc-F5-p2u" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="ypj-Be-VjC"/>
+            </constraints>
+            <size key="customSize" width="214" height="193"/>
+            <connections>
+                <outlet property="deleteButton" destination="0gA-Ah-3da" id="dyy-2a-YbN"/>
+                <outlet property="myImageView" destination="7Mc-F5-p2u" id="bQx-29-lHE"/>
+            </connections>
+            <point key="canvasLocation" x="376" y="482.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="close0001" width="19" height="19"/>
+        <image name="picture_del_highlight" width="16" height="16"/>
+    </resources>
+</document>

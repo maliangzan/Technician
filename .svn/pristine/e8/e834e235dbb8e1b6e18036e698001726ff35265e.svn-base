@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 d4c52b3a73010713a05ff71312ec90324f9b09ef 马良赞 <maliangzan@gmail.com> 1482833586 +0800	clone: from https://git.oschina.net/maliangzan/Technician.git
+d4c52b3a73010713a05ff71312ec90324f9b09ef 25c13e383666803bf22bfa1ee0d11d846a0a8494 马良赞 <maliangzan@gmail.com> 1482833609 +0800	commit: 初始化项目
+25c13e383666803bf22bfa1ee0d11d846a0a8494 1e2b2b3ad33071aea7a2259f7f9024d617c3fa45 马良赞 <maliangzan@gmail.com> 1483011961 +0800	commit: 完成接单Cell
+1e2b2b3ad33071aea7a2259f7f9024d617c3fa45 4904b7f0504d1e243e2d7d227148ca458def258b 马良赞 <maliangzan@gmail.com> 1483090011 +0800	commit: 完成接单界面
+4904b7f0504d1e243e2d7d227148ca458def258b 5739646f9deeecac1b87948ac25259b5acf4b964 马良赞 <maliangzan@gmail.com> 1483607551 +0800	commit: 完成接单详情界面
+5739646f9deeecac1b87948ac25259b5acf4b964 d546b419ce13e37a16ca42f52ebacc48c0dcf08d 马良赞 <maliangzan@gmail.com> 1483610703 +0800	commit: 优化接单详情界面cell的显示代码

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SYServiceAddressMapBackView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSR-EV-xpx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" placeholder="请输入您要搜索的地址" translatesAutoresizingMaskIntoConstraints="NO" id="0eZ-ec-6HM">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0eZ-ec-6HM" secondAttribute="trailing" id="0OP-Fp-YPY"/>
+                        <constraint firstAttribute="bottom" secondItem="0eZ-ec-6HM" secondAttribute="bottom" id="RL3-y0-IfK"/>
+                        <constraint firstAttribute="height" constant="40" id="WkK-rn-acS"/>
+                        <constraint firstItem="0eZ-ec-6HM" firstAttribute="top" secondItem="oSR-EV-xpx" secondAttribute="top" id="XVK-8Y-fAW"/>
+                        <constraint firstItem="0eZ-ec-6HM" firstAttribute="leading" secondItem="oSR-EV-xpx" secondAttribute="leading" id="fKP-9N-v3j"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IkW-Af-spl">
+                    <rect key="frame" x="0.0" y="40" width="375" height="40"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入楼栋、门牌号等具体位置" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LP3-k5-GEJ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LP3-k5-GEJ" secondAttribute="trailing" id="0ms-71-gRM"/>
+                        <constraint firstAttribute="bottom" secondItem="LP3-k5-GEJ" secondAttribute="bottom" id="RRc-s8-mF3"/>
+                        <constraint firstItem="LP3-k5-GEJ" firstAttribute="top" secondItem="IkW-Af-spl" secondAttribute="top" id="hd6-YD-7v9"/>
+                        <constraint firstAttribute="height" constant="40" id="oI5-2X-tHL"/>
+                        <constraint firstItem="LP3-k5-GEJ" firstAttribute="leading" secondItem="IkW-Af-spl" secondAttribute="leading" id="xlV-dp-DDl"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KYg-LO-9Jr">
+                    <rect key="frame" x="0.0" y="80" width="375" height="200"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="KMP-ye-05e"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bla-m4-lRG">
+                    <rect key="frame" x="0.0" y="280" width="375" height="387"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oSR-EV-xpx" secondAttribute="trailing" id="2VS-bz-8Lb"/>
+                <constraint firstAttribute="trailing" secondItem="KYg-LO-9Jr" secondAttribute="trailing" id="3kI-7G-H4R"/>
+                <constraint firstItem="Bla-m4-lRG" firstAttribute="top" secondItem="KYg-LO-9Jr" secondAttribute="bottom" id="B76-qY-vrB"/>
+                <constraint firstAttribute="bottom" secondItem="Bla-m4-lRG" secondAttribute="bottom" id="CpQ-33-roH"/>
+                <constraint firstItem="oSR-EV-xpx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Dbq-4E-XWi"/>
+                <constraint firstAttribute="trailing" secondItem="Bla-m4-lRG" secondAttribute="trailing" id="QeY-O9-iWs"/>
+                <constraint firstItem="KYg-LO-9Jr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SDg-77-yCg"/>
+                <constraint firstItem="Bla-m4-lRG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="acm-Av-ZlU"/>
+                <constraint firstItem="IkW-Af-spl" firstAttribute="top" secondItem="oSR-EV-xpx" secondAttribute="bottom" id="bFc-sp-lDD"/>
+                <constraint firstItem="IkW-Af-spl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bUR-rI-DRz"/>
+                <constraint firstItem="oSR-EV-xpx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hq5-Gc-62l"/>
+                <constraint firstItem="KYg-LO-9Jr" firstAttribute="top" secondItem="IkW-Af-spl" secondAttribute="bottom" id="le4-4A-rm9"/>
+                <constraint firstAttribute="trailing" secondItem="IkW-Af-spl" secondAttribute="trailing" id="tO3-be-e8L"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="detailAddressTextFeild" destination="LP3-k5-GEJ" id="98g-nI-WwB"/>
+                <outlet property="mapBgView" destination="KYg-LO-9Jr" id="upg-YE-eaY"/>
+                <outlet property="mapViewHeight" destination="KMP-ye-05e" id="TEz-ZV-8aP"/>
+                <outlet property="searchBar" destination="0eZ-ec-6HM" id="U5B-Cw-Lgy"/>
+                <outlet property="tableView" destination="Bla-m4-lRG" id="nky-jn-9zc"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

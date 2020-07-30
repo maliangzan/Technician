@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SYOnlyLabelCell">
+            <rect key="frame" x="0.0" y="0.0" width="126" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="126" height="61"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaj-Jc-apM">
+                        <rect key="frame" x="0.0" y="0.0" width="126" height="61"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="contentBtnClickAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Yvf-p5-NLz"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEr-sR-Dj0">
+                        <rect key="frame" x="0.0" y="0.0" width="126" height="1"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Mar-0R-Unt"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KyL-v0-RK7">
+                        <rect key="frame" x="0.0" y="0.0" width="1" height="61"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="BYr-ix-G2l"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="gaj-Jc-apM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4gU-1m-5f2"/>
+                <constraint firstAttribute="bottom" secondItem="KyL-v0-RK7" secondAttribute="bottom" id="9bI-Cr-ikc"/>
+                <constraint firstItem="KyL-v0-RK7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Fzq-2x-wLP"/>
+                <constraint firstItem="gaj-Jc-apM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ndb-vW-N5e"/>
+                <constraint firstItem="KyL-v0-RK7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NvP-Jm-Htz"/>
+                <constraint firstAttribute="trailing" secondItem="gEr-sR-Dj0" secondAttribute="trailing" id="bpR-wC-KWC"/>
+                <constraint firstAttribute="trailing" secondItem="gaj-Jc-apM" secondAttribute="trailing" id="ce6-7m-CYw"/>
+                <constraint firstItem="gEr-sR-Dj0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ncx-xY-ecd"/>
+                <constraint firstItem="gEr-sR-Dj0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tH9-oc-xEy"/>
+                <constraint firstAttribute="bottom" secondItem="gaj-Jc-apM" secondAttribute="bottom" id="yxs-Jw-e6E"/>
+            </constraints>
+            <size key="customSize" width="126" height="61"/>
+            <connections>
+                <outlet property="contentBtn" destination="gaj-Jc-apM" id="Mko-HT-edq"/>
+            </connections>
+            <point key="canvasLocation" x="63" y="57.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

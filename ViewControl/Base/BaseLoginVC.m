@@ -1,0 +1,102 @@
+//
+//  BaseLoginRegisterVC.m
+//  Technician
+//
+//  Created by 马良赞 on 16/12/22.
+//  Copyright © 2016年 马良赞. All rights reserved.
+//
+
+#import "BaseLoginVC.h"
+
+@interface BaseLoginVC ()
+@end
+
+@implementation BaseLoginVC
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+-(UIButton *)actionBtn{
+    if (!_actionBtn) {
+        _actionBtn = [[UIButton alloc]init];
+        [_actionBtn setTitleColor:kAppColorTextMiddleBlack forState:UIControlStateNormal];
+        _actionBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+    }
+    return _actionBtn;
+}
+-(void)buildUI{
+    [super buildUI];
+    
+    self.navImg.hidden = YES;
+    self.backBtn.hidden = YES;
+    self.bigBackButton.hidden = YES;
+    
+    [self addGesture];
+    
+    [self.view addSubview:self.actionBtn];
+    [self.actionBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.bottom.equalTo(self.view.mas_bottom).offset(-20*kHeightFactor);
+        make.size.mas_equalTo(CGSizeMake(100*kWidthFactor, 20*kHeightFactor));
+    }];
+}
+- (void)addGesture{
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapAction)];
+    [self.view addGestureRecognizer:tap];
+}
+- (void)handleTapAction
+{
+    [self.view endEditing:YES];
+}
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+- (UIImageView *)createInputViewReferTo:(UITextField *)textfield IconImgStr:(NSString *)name{
+    
+    
+    UIImageView *imageView = [[UIImageView alloc]init];
+    [imageView setUserInteractionEnabled:YES];
+    [imageView setBackgroundColor:[UIColor whiteColor]];
+    UIImageView *iconImg = [[UIImageView alloc]init];
+    iconImg.image = PNGIMAGE(name);
+    
+    [imageView addSubview:iconImg];
+    [iconImg mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(imageView).offset(17*kWidthFactor);
+        make.centerY.equalTo(imageView);
+        make.size.mas_equalTo(CGSizeMake(22*kWidthFactor, 26*kHeightFactor));
+    }];
+    
+    [imageView addSubview:textfield];
+    [textfield mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(iconImg.mas_right).offset(20);
+        make.right.equalTo(imageView).offset(-30);
+        make.top.equalTo(imageView);
+        make.bottom.equalTo(imageView);
+    }];
+    return imageView;
+}
+#pragma mark --
+- (UITextField *)textFieldWithPlaceHolder:(NSString *)placeholder{
+    UITextField *textField = [[UITextField alloc] init];
+    textField.placeholder = placeholder;
+    textField.textColor = [UIColor blackColor];
+    textField.tintColor = [UIColor blackColor];
+    textField.autocorrectionType = UITextAutocorrectionTypeNo;
+    textField.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+    return textField;
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

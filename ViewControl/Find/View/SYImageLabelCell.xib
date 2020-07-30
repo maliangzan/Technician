@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="274" id="KGk-i7-Jjw" customClass="SYImageLabelCell">
+            <rect key="frame" x="0.0" y="0.0" width="303" height="274"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="303" height="273"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="umr-u8-QNm">
+                        <rect key="frame" x="30" y="30" width="243" height="183"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_health" translatesAutoresizingMaskIntoConstraints="NO" id="l1j-9a-Mdt">
+                        <rect key="frame" x="67" y="39" width="169" height="166"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="l1j-9a-Mdt" secondAttribute="height" multiplier="196:193" id="AD5-tp-p1D"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备名称：负压养生仪" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFU-m6-eOS">
+                        <rect key="frame" x="0.0" y="213" width="303" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="9bF-iq-V0H"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmM-eK-pCq">
+                        <rect key="frame" x="205" y="14" width="68" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title=" 使用指导" image="question_mark">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="guidAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hGV-Xi-8tt"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="umr-u8-QNm" secondAttribute="trailing" constant="30" id="4PI-oj-pCt"/>
+                    <constraint firstItem="ZFU-m6-eOS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DxS-tD-9O7"/>
+                    <constraint firstItem="umr-u8-QNm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="LGF-3H-fen"/>
+                    <constraint firstItem="CmM-eK-pCq" firstAttribute="trailing" secondItem="umr-u8-QNm" secondAttribute="trailing" id="S5w-n5-qTg"/>
+                    <constraint firstAttribute="bottom" secondItem="ZFU-m6-eOS" secondAttribute="bottom" id="Ttl-Oe-kFM"/>
+                    <constraint firstItem="ZFU-m6-eOS" firstAttribute="top" secondItem="umr-u8-QNm" secondAttribute="bottom" id="YRw-qN-QqP"/>
+                    <constraint firstItem="umr-u8-QNm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="bnA-Kl-aEv"/>
+                    <constraint firstItem="umr-u8-QNm" firstAttribute="top" secondItem="CmM-eK-pCq" secondAttribute="bottom" id="dra-C7-UWB"/>
+                    <constraint firstItem="l1j-9a-Mdt" firstAttribute="centerY" secondItem="umr-u8-QNm" secondAttribute="centerY" id="eUd-ym-aQ8"/>
+                    <constraint firstAttribute="trailing" secondItem="ZFU-m6-eOS" secondAttribute="trailing" id="jqd-oq-ub3"/>
+                    <constraint firstItem="l1j-9a-Mdt" firstAttribute="width" secondItem="umr-u8-QNm" secondAttribute="height" multiplier="120:130" id="ntW-ya-9vT"/>
+                    <constraint firstItem="l1j-9a-Mdt" firstAttribute="centerX" secondItem="umr-u8-QNm" secondAttribute="centerX" id="vaU-0f-1hc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deviceImageView" destination="l1j-9a-Mdt" id="BuB-D4-Uhw"/>
+                <outlet property="deviceNameLabel" destination="ZFU-m6-eOS" id="Kd0-0T-SDg"/>
+                <outlet property="deviceNameLabelHeight" destination="9bF-iq-V0H" id="vfu-Lp-QW4"/>
+                <outlet property="guidBtn" destination="CmM-eK-pCq" id="SvO-Td-I3Q"/>
+            </connections>
+            <point key="canvasLocation" x="16.5" y="167"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pic_health" width="196" height="193"/>
+        <image name="question_mark" width="11" height="11"/>
+    </resources>
+</document>

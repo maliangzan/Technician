@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AboutUsBackView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OHw-Uc-qBd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="66m-Mq-dPe">
+                            <rect key="frame" x="138" y="43" width="100" height="115"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="66m-Mq-dPe" secondAttribute="height" multiplier="175:202" id="anU-iI-q4I"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yk4-nb-MDp">
+                            <rect key="frame" x="0.0" y="168" width="375" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="66m-Mq-dPe" firstAttribute="centerX" secondItem="OHw-Uc-qBd" secondAttribute="centerX" id="09V-k1-eQg"/>
+                        <constraint firstAttribute="height" constant="200" id="4qR-0O-hwA"/>
+                        <constraint firstItem="yk4-nb-MDp" firstAttribute="top" secondItem="66m-Mq-dPe" secondAttribute="bottom" constant="10" id="8ye-PX-1Sz"/>
+                        <constraint firstItem="66m-Mq-dPe" firstAttribute="width" secondItem="OHw-Uc-qBd" secondAttribute="height" multiplier="1:2" id="C4g-HP-GYr"/>
+                        <constraint firstItem="yk4-nb-MDp" firstAttribute="centerX" secondItem="66m-Mq-dPe" secondAttribute="centerX" id="L9K-Vx-hE1"/>
+                        <constraint firstAttribute="trailing" secondItem="yk4-nb-MDp" secondAttribute="trailing" id="SoP-SD-gUW"/>
+                        <constraint firstItem="66m-Mq-dPe" firstAttribute="centerY" secondItem="OHw-Uc-qBd" secondAttribute="centerY" id="ifU-po-TOI"/>
+                        <constraint firstItem="yk4-nb-MDp" firstAttribute="leading" secondItem="OHw-Uc-qBd" secondAttribute="leading" id="mu4-SV-zTo"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NaO-MW-Fzr">
+                    <rect key="frame" x="0.0" y="200" width="375" height="426"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="深圳市是源医学科技有限公司  版权所有" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEu-Lr-JM1">
+                    <rect key="frame" x="0.0" y="626" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="H2y-Ni-FBw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NaO-MW-Fzr" firstAttribute="top" secondItem="OHw-Uc-qBd" secondAttribute="bottom" id="4u5-7J-dDx"/>
+                <constraint firstAttribute="trailing" secondItem="NaO-MW-Fzr" secondAttribute="trailing" id="5Wc-7g-e1N"/>
+                <constraint firstItem="OHw-Uc-qBd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5Zv-Xf-UF1"/>
+                <constraint firstAttribute="trailing" secondItem="OHw-Uc-qBd" secondAttribute="trailing" id="5th-0I-7em"/>
+                <constraint firstItem="OHw-Uc-qBd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="74s-Vc-4Sd"/>
+                <constraint firstAttribute="bottom" secondItem="AEu-Lr-JM1" secondAttribute="bottom" constant="20" id="Fod-tW-PsU"/>
+                <constraint firstItem="AEu-Lr-JM1" firstAttribute="top" secondItem="NaO-MW-Fzr" secondAttribute="bottom" id="TdV-PS-KF0"/>
+                <constraint firstItem="NaO-MW-Fzr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="g7N-ds-hws"/>
+                <constraint firstAttribute="trailing" secondItem="AEu-Lr-JM1" secondAttribute="trailing" id="gWf-Pg-zRE"/>
+                <constraint firstItem="AEu-Lr-JM1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="h6o-qV-Kb5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="NaO-MW-Fzr" id="RBF-k5-88m"/>
+                <outlet property="versionLabel" destination="yk4-nb-MDp" id="uvR-uM-iJJ"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo.png" width="175" height="202"/>
+    </resources>
+</document>

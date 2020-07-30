@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IDCardView">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="208"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3io-Dv-SQC">
+                    <rect key="frame" x="0.0" y="10" width="164.5" height="86"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="aCJ-Da-Axc"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kpQ-ES-Z4F">
+                    <rect key="frame" x="174.5" y="10" width="164.5" height="86"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tw1-Y9-VKq">
+                    <rect key="frame" x="0.0" y="106" width="339" height="92"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbq-sX-Cem">
+                    <rect key="frame" x="49" y="33" width="66" height="41"/>
+                    <state key="normal" image="id_card_01"/>
+                    <connections>
+                        <action selector="chooseIDCardZhengAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="lv6-z3-o5O"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpl-Qb-Vu4">
+                    <rect key="frame" x="223" y="35" width="66" height="36"/>
+                    <state key="normal" image="id_card_02"/>
+                    <connections>
+                        <action selector="chooseIDCardFanAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="BLL-UN-iKB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMj-OW-mnH">
+                    <rect key="frame" x="138" y="138" width="62" height="29"/>
+                    <state key="normal" image="id_card_00"/>
+                    <connections>
+                        <action selector="chooseIDCardPersonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="aYK-JZ-vMv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jbq-sX-Cem" firstAttribute="centerY" secondItem="3io-Dv-SQC" secondAttribute="centerY" id="0DK-V6-Phq"/>
+                <constraint firstItem="Tw1-Y9-VKq" firstAttribute="top" secondItem="kpQ-ES-Z4F" secondAttribute="bottom" constant="10" id="9Rf-Y0-z0n"/>
+                <constraint firstItem="DMj-OW-mnH" firstAttribute="centerX" secondItem="Tw1-Y9-VKq" secondAttribute="centerX" id="Cyd-Li-iSe"/>
+                <constraint firstItem="DMj-OW-mnH" firstAttribute="centerY" secondItem="Tw1-Y9-VKq" secondAttribute="centerY" id="HDw-PQ-02e"/>
+                <constraint firstItem="3io-Dv-SQC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="HkC-sk-ths"/>
+                <constraint firstItem="kpQ-ES-Z4F" firstAttribute="top" secondItem="3io-Dv-SQC" secondAttribute="top" id="JSt-tt-ewY"/>
+                <constraint firstItem="bpl-Qb-Vu4" firstAttribute="centerX" secondItem="kpQ-ES-Z4F" secondAttribute="centerX" id="MW2-4W-CKK"/>
+                <constraint firstItem="kpQ-ES-Z4F" firstAttribute="trailing" secondItem="Tw1-Y9-VKq" secondAttribute="trailing" id="Mlf-Yh-877"/>
+                <constraint firstItem="kpQ-ES-Z4F" firstAttribute="leading" secondItem="3io-Dv-SQC" secondAttribute="trailing" constant="10" id="Sc9-Pk-86p"/>
+                <constraint firstItem="3io-Dv-SQC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="U5V-We-KHW"/>
+                <constraint firstItem="kpQ-ES-Z4F" firstAttribute="height" secondItem="3io-Dv-SQC" secondAttribute="height" id="UO1-Oh-PQ3"/>
+                <constraint firstAttribute="bottom" secondItem="Tw1-Y9-VKq" secondAttribute="bottom" constant="10" id="Uec-wy-TGV"/>
+                <constraint firstAttribute="trailing" secondItem="kpQ-ES-Z4F" secondAttribute="trailing" constant="40" id="XKK-af-J8Z"/>
+                <constraint firstItem="jbq-sX-Cem" firstAttribute="centerX" secondItem="3io-Dv-SQC" secondAttribute="centerX" id="ep1-ox-6sT"/>
+                <constraint firstItem="bpl-Qb-Vu4" firstAttribute="centerY" secondItem="kpQ-ES-Z4F" secondAttribute="centerY" id="rNM-tN-chW"/>
+                <constraint firstItem="kpQ-ES-Z4F" firstAttribute="width" secondItem="3io-Dv-SQC" secondAttribute="width" id="vF9-7K-BMs"/>
+                <constraint firstItem="Tw1-Y9-VKq" firstAttribute="leading" secondItem="3io-Dv-SQC" secondAttribute="leading" id="vlI-4U-JU7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="fanBtn" destination="bpl-Qb-Vu4" id="gDg-3b-sL3"/>
+                <outlet property="fanImageView" destination="kpQ-ES-Z4F" id="MEs-FV-v07"/>
+                <outlet property="personBtn" destination="DMj-OW-mnH" id="Rl7-hj-KaN"/>
+                <outlet property="personImageView" destination="Tw1-Y9-VKq" id="ePK-X7-xUS"/>
+                <outlet property="zhengBtn" destination="jbq-sX-Cem" id="Zcx-XW-g0Z"/>
+                <outlet property="zhengImageView" destination="3io-Dv-SQC" id="rPm-8H-Fkn"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="56"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="id_card_00" width="62" height="29"/>
+        <image name="id_card_01" width="66" height="41"/>
+        <image name="id_card_02" width="66" height="36"/>
+    </resources>
+</document>

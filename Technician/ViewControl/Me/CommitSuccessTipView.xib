@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommitSuccessTipView">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="186"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZ1-CX-Hu0">
+                    <rect key="frame" x="51.5" y="11.5" width="60" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cZ1-CX-Hu0" secondAttribute="height" multiplier="49:36" id="GMg-CG-dqP"/>
+                        <constraint firstAttribute="width" constant="60" id="ae8-kF-027"/>
+                    </constraints>
+                    <state key="normal" image="passed01"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资料成功提交！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqD-7F-mor">
+                    <rect key="frame" x="97" y="30" width="149.5" height="25.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我们将在2-3个工作日内审核" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajh-Ex-b2j">
+                    <rect key="frame" x="0.0" y="75.5" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请耐心等待" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4j-od-aoJ">
+                    <rect key="frame" x="0.0" y="96.5" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请保持电话畅通" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjC-h6-lZV">
+                    <rect key="frame" x="0.0" y="117.5" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afg-zg-I2k">
+                    <rect key="frame" x="309" y="15" width="19" height="22"/>
+                    <state key="normal" image="close0001"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MqD-7F-mor" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="0kb-Fy-beM"/>
+                <constraint firstItem="Afg-zg-I2k" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="2cm-oH-ZQJ"/>
+                <constraint firstItem="Ajh-Ex-b2j" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2uw-LY-Rys"/>
+                <constraint firstItem="Ajh-Ex-b2j" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="E8Q-v8-ofG"/>
+                <constraint firstItem="JjC-h6-lZV" firstAttribute="top" secondItem="s4j-od-aoJ" secondAttribute="bottom" id="GrY-In-P1B"/>
+                <constraint firstItem="cZ1-CX-Hu0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-90" id="JVM-fh-jGt"/>
+                <constraint firstAttribute="trailing" secondItem="JjC-h6-lZV" secondAttribute="trailing" id="ViV-L2-Bf9"/>
+                <constraint firstItem="JjC-h6-lZV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ysy-Hu-nnE"/>
+                <constraint firstItem="MqD-7F-mor" firstAttribute="bottom" secondItem="cZ1-CX-Hu0" secondAttribute="bottom" id="dRI-JA-mxF"/>
+                <constraint firstItem="s4j-od-aoJ" firstAttribute="top" secondItem="Ajh-Ex-b2j" secondAttribute="bottom" id="g08-va-O4r"/>
+                <constraint firstAttribute="trailing" secondItem="Afg-zg-I2k" secondAttribute="trailing" constant="15" id="iBf-jJ-ybe"/>
+                <constraint firstItem="MqD-7F-mor" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lPP-ON-Epc"/>
+                <constraint firstItem="MqD-7F-mor" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mYh-e4-Mf1"/>
+                <constraint firstItem="Ajh-Ex-b2j" firstAttribute="top" secondItem="MqD-7F-mor" secondAttribute="bottom" constant="20" id="nZf-W0-f3V"/>
+                <constraint firstAttribute="trailing" secondItem="Ajh-Ex-b2j" secondAttribute="trailing" id="q1H-7x-azq"/>
+                <constraint firstAttribute="trailing" secondItem="s4j-od-aoJ" secondAttribute="trailing" id="rgM-fL-sFZ"/>
+                <constraint firstItem="s4j-od-aoJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="u8i-Yk-hlB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="colseBtn" destination="Afg-zg-I2k" id="UY8-Im-3JY"/>
+                <outlet property="imgBtn" destination="cZ1-CX-Hu0" id="ViU-yE-w9Y"/>
+                <outlet property="labelOne" destination="Ajh-Ex-b2j" id="i7M-Re-Vjp"/>
+                <outlet property="labelThree" destination="JjC-h6-lZV" id="pcI-QW-F7v"/>
+                <outlet property="labelTwo" destination="s4j-od-aoJ" id="xOv-z2-fxp"/>
+                <outlet property="titleLabel" destination="MqD-7F-mor" id="FDk-DW-QnU"/>
+            </connections>
+            <point key="canvasLocation" x="8.5" y="-188"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close0001" width="19" height="19"/>
+        <image name="passed01" width="49" height="36"/>
+    </resources>
+</document>

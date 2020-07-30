@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4DCE76E68D502B44D2E5751D1FC2C11619E4C3C0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "4DCE76E68D502B44D2E5751D1FC2C11619E4C3C0" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4DCE76E68D502B44D2E5751D1FC2C11619E4C3C0" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "934720A4-CB0C-48E5-8159-084C89A29194",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4DCE76E68D502B44D2E5751D1FC2C11619E4C3C0" : "Technician\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Technician",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Technician.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/172.20.76.249",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4DCE76E68D502B44D2E5751D1FC2C11619E4C3C0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/maliangzan\/Technician.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4DCE76E68D502B44D2E5751D1FC2C11619E4C3C0"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="171" id="KGk-i7-Jjw" customClass="TextViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="171"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="擅长简介" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vs-XQ-QFQ">
+                        <rect key="frame" x="20" y="15" width="335" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="M3u-zH-bwi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pkT-ul-cmt">
+                        <rect key="frame" x="20" y="46" width="345" height="84.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="擅长技能简单介绍（150个字以内）" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beb-TH-imT">
+                        <rect key="frame" x="20" y="78" width="345" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="tfS-tT-MQC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4vs-XQ-QFQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="9dQ-4D-z0X"/>
+                    <constraint firstItem="beb-TH-imT" firstAttribute="leading" secondItem="4vs-XQ-QFQ" secondAttribute="leading" id="EVB-Sa-KXm"/>
+                    <constraint firstItem="beb-TH-imT" firstAttribute="leading" secondItem="pkT-ul-cmt" secondAttribute="leading" id="GsS-dY-JRt"/>
+                    <constraint firstItem="pkT-ul-cmt" firstAttribute="top" secondItem="4vs-XQ-QFQ" secondAttribute="bottom" constant="10" id="KPZ-bw-uCd"/>
+                    <constraint firstAttribute="trailing" secondItem="pkT-ul-cmt" secondAttribute="trailing" constant="10" id="fEl-4f-Mzy"/>
+                    <constraint firstItem="beb-TH-imT" firstAttribute="trailing" secondItem="pkT-ul-cmt" secondAttribute="trailing" id="iQA-19-fSi"/>
+                    <constraint firstAttribute="trailing" secondItem="4vs-XQ-QFQ" secondAttribute="trailing" constant="20" id="ikb-Iw-YWY"/>
+                    <constraint firstAttribute="bottom" secondItem="pkT-ul-cmt" secondAttribute="bottom" constant="40" id="lnk-GU-LqM"/>
+                    <constraint firstItem="beb-TH-imT" firstAttribute="centerY" secondItem="pkT-ul-cmt" secondAttribute="centerY" id="tEc-QO-wMp"/>
+                    <constraint firstItem="4vs-XQ-QFQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="xKw-rT-sB9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="placeHolderLabel" destination="beb-TH-imT" id="cs5-Bg-NFH"/>
+                <outlet property="titleLabel" destination="4vs-XQ-QFQ" id="pMh-wD-Qbx"/>
+                <outlet property="valueTextView" destination="pkT-ul-cmt" id="yQf-26-GEX"/>
+            </connections>
+            <point key="canvasLocation" x="-118.5" y="64.5"/>
+        </tableViewCell>
+    </objects>
+</document>
